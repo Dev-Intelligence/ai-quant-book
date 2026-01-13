@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 320">
+  <defs>
+    <style>
+      .label { font: 500 10px 'SF Mono', 'Menlo', 'Monaco', monospace; fill: #666; letter-spacing: 0.5px; }
+      .label-left { font: 500 10px 'SF Mono', 'Menlo', 'Monaco', monospace; fill: #666; text-anchor: end; }
+      .label-right { font: 500 10px 'SF Mono', 'Menlo', 'Monaco', monospace; fill: #666; text-anchor: start; }
+      .title { font: 600 12px 'SF Mono', 'Menlo', 'Monaco', monospace; fill: #1a1a1a; text-anchor: middle; letter-spacing: 1px; }
+      .subtitle { font: 500 10px 'SF Mono', 'Menlo', 'Monaco', monospace; fill: #666; text-anchor: middle; }
+      .price-label { font: 500 9px 'SF Mono', 'Menlo', 'Monaco', monospace; fill: #1a1a1a; }
+    </style>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#666"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="500" height="320" fill="#fff"/>
+
+  <!-- Title -->
+  <text x="250" y="25" class="title">CANDLESTICK ANATOMY</text>
+
+  <!-- Bullish Candle (Green) -->
+  <g transform="translate(100, 50)">
+    <text x="40" y="0" class="subtitle">BULLISH (UP)</text>
+
+    <!-- Upper shadow line -->
+    <line x1="40" y1="20" x2="40" y2="70" stroke="#10b981" stroke-width="2"/>
+
+    <!-- Body -->
+    <rect x="20" y="70" width="40" height="120" fill="#10b981" stroke="#1a1a1a" stroke-width="1"/>
+
+    <!-- Lower shadow line -->
+    <line x1="40" y1="190" x2="40" y2="230" stroke="#10b981" stroke-width="2"/>
+
+    <!-- Labels with arrows -->
+    <!-- High -->
+    <line x1="45" y1="20" x2="90" y2="20" stroke="#666" stroke-width="1" marker-end="url(#arrow)"/>
+    <text x="95" y="24" class="label-right">HIGH</text>
+
+    <!-- Upper shadow -->
+    <line x1="45" y1="45" x2="90" y2="45" stroke="#666" stroke-width="1"/>
+    <text x="95" y="49" class="label-right">Upper Shadow</text>
+
+    <!-- Close (top of body for bullish) -->
+    <line x1="65" y1="70" x2="90" y2="70" stroke="#666" stroke-width="1"/>
+    <text x="95" y="74" class="label-right">CLOSE</text>
+
+    <!-- Body label -->
+    <line x1="65" y1="130" x2="90" y2="130" stroke="#666" stroke-width="1"/>
+    <text x="95" y="134" class="label-right">Body</text>
+
+    <!-- Open (bottom of body for bullish) -->
+    <line x1="65" y1="190" x2="90" y2="190" stroke="#666" stroke-width="1"/>
+    <text x="95" y="194" class="label-right">OPEN</text>
+
+    <!-- Lower shadow -->
+    <line x1="45" y1="210" x2="90" y2="210" stroke="#666" stroke-width="1"/>
+    <text x="95" y="214" class="label-right">Lower Shadow</text>
+
+    <!-- Low -->
+    <line x1="45" y1="230" x2="90" y2="230" stroke="#666" stroke-width="1" marker-end="url(#arrow)"/>
+    <text x="95" y="234" class="label-right">LOW</text>
+  </g>
+
+  <!-- Bearish Candle (Red) -->
+  <g transform="translate(300, 50)">
+    <text x="40" y="0" class="subtitle">BEARISH (DOWN)</text>
+
+    <!-- Upper shadow line -->
+    <line x1="40" y1="20" x2="40" y2="70" stroke="#ef4444" stroke-width="2"/>
+
+    <!-- Body -->
+    <rect x="20" y="70" width="40" height="120" fill="#ef4444" stroke="#1a1a1a" stroke-width="1"/>
+
+    <!-- Lower shadow line -->
+    <line x1="40" y1="190" x2="40" y2="230" stroke="#ef4444" stroke-width="2"/>
+
+    <!-- Labels with arrows -->
+    <!-- High -->
+    <line x1="45" y1="20" x2="90" y2="20" stroke="#666" stroke-width="1" marker-end="url(#arrow)"/>
+    <text x="95" y="24" class="label-right">HIGH</text>
+
+    <!-- Open (top of body for bearish) -->
+    <line x1="65" y1="70" x2="90" y2="70" stroke="#666" stroke-width="1"/>
+    <text x="95" y="74" class="label-right">OPEN</text>
+
+    <!-- Close (bottom of body for bearish) -->
+    <line x1="65" y1="190" x2="90" y2="190" stroke="#666" stroke-width="1"/>
+    <text x="95" y="194" class="label-right">CLOSE</text>
+
+    <!-- Low -->
+    <line x1="45" y1="230" x2="90" y2="230" stroke="#666" stroke-width="1" marker-end="url(#arrow)"/>
+    <text x="95" y="234" class="label-right">LOW</text>
+  </g>
+
+  <!-- Note about color conventions -->
+  <g transform="translate(50, 295)">
+    <text x="0" y="0" class="label">US/International: Green = Up, Red = Down</text>
+    <text x="250" y="0" class="label">A-shares (China): Red = Up, Green = Down</text>
+  </g>
+</svg>
