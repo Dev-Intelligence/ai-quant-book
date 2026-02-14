@@ -50,7 +50,7 @@ This is the harsh reality of data engineering.
 |-------------|-----------------|--------------|----------|
 | **Bloomberg** | Global | **$2,500+** | Institutional standard, highest quality |
 | **LSEG Workspace** (formerly Refinitiv) | Global | Quote-based pricing | LSEG subsidiary, former Reuters data |
-| **Polygon.io** (Massive) | US stocks | **$99+** | Real-time + historical, developer-friendly |
+| **Polygon.io** (now rebranded to Massive) | US stocks | **$99+** | Real-time + historical, developer-friendly |
 | **Nasdaq Data Link** (formerly Quandl) | Alternative data | Per dataset pricing | Satellite, consumer data, etc. |
 
 ### How to Choose?
