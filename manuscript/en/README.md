@@ -6,23 +6,6 @@ This book systematically explains how to build a multi-agent quantitative tradin
 
 ---
 
-## ⚠️ Work in Progress
-
-This book is being released serially, alongside the [Bilibili video series](https://space.bilibili.com/3546611527453161/lists/5376272?type=season).
-
-**Current Status**:
-- Some chapter links may be temporarily inaccessible (not yet published)
-- New chapters will be released alongside video updates
-- Star this repo to follow progress
-
-| Released | In Progress | Planned |
-|----------|-------------|---------|
-| Part 1 | Part 2 | Part 3-5 |
-
-> 💡 If you encounter 404 links, please check back later or follow the Bilibili channel for update notifications.
-
----
-
 ## ⚠️ Disclaimer
 
 This book is for educational and research purposes only and **does not constitute investment advice**. Quantitative trading involves significant risks and may result in loss of principal. Readers should fully understand the risks before making independent investment decisions. The author assumes no responsibility for any losses incurred from using the content of this book.
