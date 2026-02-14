@@ -129,6 +129,8 @@ Markets switch between different regimes:
 2. **Dynamic Routing**: Meta-Agent determines current market regime and routes tasks to corresponding experts
 3. **Independent Risk Control**: Risk Agent has veto power—any expert's recommendation must pass risk control
 
+> **Note:** This lesson presents the complete multi-agent target architecture. In practice, we recommend starting with a **Modular Monolith** — all agents running within a single process, communicating through clean interface boundaries. As scale grows, gradually extract components into independent services. See Lesson 21 for the detailed evolution path.
+
 ### Common Misconceptions
 
 | Misconception | Reality |

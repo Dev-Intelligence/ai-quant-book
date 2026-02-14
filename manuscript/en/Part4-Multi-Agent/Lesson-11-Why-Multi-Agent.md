@@ -225,6 +225,8 @@ Risk Agent has veto power:
 
 ### From Single Agent to Multi-Agent
 
+> **Practical Principle: Get it right in one process first.** Multi-agent systems are conceptually multiple independent entities collaborating, but deployment doesn't need to start as microservices from day one. Recommended path: Modular Monolith → Selective Extraction (e.g., risk engine as independent service) → Fully Distributed. Module boundaries should be clear from day one; deployment boundaries can be deferred. See Lesson 21's architecture evolution section.
+
 Don't build complex systems from the start. Recommended path:
 
 ```

@@ -68,6 +68,16 @@ Institutional (> $10M AUM):
 
 **Core principle**: **Data quality determines strategy ceiling**. Garbage in, garbage out.
 
+> **Data Source Evolution Path**
+>
+> | Stage | Recommended Source | Notes |
+> |-------|-------------------|-------|
+> | Learning/Prototyping | Yahoo Finance (yfinance) | Free daily bars, sufficient for exercises |
+> | Small-Scale Live | Polygon.io / Alpaca | Real-time quotes, developer-friendly APIs |
+> | Institutional Production | Databento / Exchange Direct Feeds | L1/L2 real-time data, low latency |
+>
+> This lesson's exercises work perfectly with Yahoo Finance. When you're ready for live trading, you'll need to upgrade to professional-grade data sources — see Lesson 19 for details.
+
 ---
 
 ## 6.2 The Painful Reality of APIs
@@ -165,6 +175,9 @@ def get_history_robust(
 | **Data Delay** | Timestamps lagging | Record delay + adjust strategy |
 | **Inconsistent Format** | Field names change | Unified data adapter layer |
 | **Unstable Connection** | Disconnects, timeouts | Heartbeat detection + auto-reconnect |
+
+> **Production Note: Canonical Data Model**
+> Different markets and data sources use different symbol formats (`600519.SH`, `AAPL`, `0700.HK`, `BTC/USDT`). Production systems need a **unified normalization layer** (Normalizer) that converts external formats to an internal standard (e.g., `SYMBOL.EXCHANGE`: `AAPL.NASDAQ`, `0700.HKEX`). This is a prerequisite for multi-market trading. Watch out for common symbol resolution pitfalls: delisted tickers failing silently, corporate actions changing symbols, multi-part tickers (e.g., BRK.B), and more. See Lesson 19 for details.
 
 ### The Real Cost of Rate Limiting
 

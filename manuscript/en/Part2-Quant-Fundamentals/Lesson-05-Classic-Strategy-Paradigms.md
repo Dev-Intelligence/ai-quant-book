@@ -458,6 +458,10 @@ Can't. Trend strategy logic assumes "trends exist." Sideways markets have no tre
 
 Extremely dangerous. Grid trading does profit steadily in sideways markets, but one-sided decline means buying all the way down, capital trapped. Must set overall stop-loss.
 
+**Misconception 5: Classic Strategies Work Forever**
+
+When too many participants use the same strategy, it stops working — this is **Strategy Crowding** risk. In early 2024, China's top quantitative funds collectively lost 8-13% due to small-cap factor crowding, revealing the systemic risk of strategy homogenization. Any strategy's excess returns decay after widespread adoption. See Lesson 18 for the detailed crowding case study.
+
 ### Multi-Agent Perspective
 
 In multi-agent systems:

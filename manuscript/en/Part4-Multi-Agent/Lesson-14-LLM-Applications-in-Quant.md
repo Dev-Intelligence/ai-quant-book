@@ -319,6 +319,9 @@ LLM Agent Position:
 | Explain strategy logic | Execute orders |
 | Flag anomalous events | Disable stop-losses |
 
+> **LLM Capability Boundaries**
+> LLMs are excellent research analysts but should never directly participate in trading decisions. They can parse annual reports, detect tone changes in earnings calls, flag accounting irregularities, and generate factor hypotheses — but they cannot generate orders, calculate position sizes, modify risk parameters, or execute trades. This boundary must be enforced at the architecture level: LLM outputs can only serve as signal inputs, never reaching the execution or risk control paths directly. See Lesson 22 for the complete boundary table.
+
 ---
 
 ## 14.7 Practical Considerations
